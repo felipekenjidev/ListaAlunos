@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Alunos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img src="images/icone_principal.png" alt="Ícone do Sistema">
+        <div id="caixa-navegacao">
+            <a class="ancora-navegacao" href="index.html">
+                <div class="botao-navegacao">
+                    <img src="images/icone_dashboard.png" alt="Ícone de Dashboard">
+                    <p>Lista de Alunos</p>
+                </div>
+            </a>
+            <a class="ancora-navegacao" href="novo.html">
+                <div class="botao-navegacao navegacao-selecionada">
+                    <img src="images/icone_novo.png" alt="Ícone de Novo">
+                    <p>Criar Novo Aluno</p>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <h1>Criar Novo Aluno</h1>
+        <p>Aqui está um formulário para a criação de novos alunos. Preencha as informações do aluno e clique no botão de salvar para adicionar o aluno à base de dados.</p>
+
+        <div id="area-formulario">
+            <div id="cabecalho-formulario">
+                <h2>Adicionar Aluno</h2>
+            </div>
+            <form>
+                <div id="form-ra">
+                    <label for="nmbRA">RA</label>
+                    <input type="number" name="nmbRA" id="nmbRA">
+                </div>
+                <div id="form-nome">
+                    <label for="txtNome">Nome</label>
+                    <input type="text" name="txtNome" id="txtNome">
+                </div>
+                <div id="form-sexo">
+                    <label for="ddlSexo">Sexo</label>
+                    <select name="ddlSexo" id="ddlSexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+                <div id="form-idade">
+                    <label for="nmbIdade">Idade</label>
+                    <input type="number" name="nmbIdade" id="nmbIdade">
+                </div>
+                <div id="form-endereco">
+                    <label for="txtEndereco">Endereço</label>
+                    <input type="text" name="txtEndereco" id="txtEndereco">
+                </div>
+                <div id="form-telefone">
+                    <label for="txtTelefone">Telefone</label>
+                    <input type="text" name="txtTelefone" id="txtTelefone">
+                </div>
+                <div id="form-email">
+                    <label for="txtEmail">Email</label>
+                    <input type="text" name="txtEmail" id="txtEmail">
+                </div>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>        
+    </main>
+</body>
+</html>

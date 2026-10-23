@@ -12,6 +12,7 @@
     --cor-secundaria-variada: #E2E6E9;
     --cor-branca: #FFFFFF;
     --cor-cinza: #DBDDDE;
+    --cor-confirmacao: #13C443;
 }
 
 html { font-size: 20px; font-family: "Inter", sans-serif; }
@@ -100,3 +101,92 @@ td {
 
 td:first-child { text-align: center; }
 tbody td:first-child { font-weight: 600; }
+
+/* ---------- Formulário de Novo Aluno ---------- */
+#area-formulario {
+    width: 100%; height: 600px;
+    background-color: var(--cor-branca);
+    border-radius: 20px;
+    position: relative;
+}
+
+#cabecalho-formulario {
+    background-color: var(--cor-primaria);
+    border-radius: 20px 20px 0 0;
+}
+
+h2 {
+    color: var(--cor-secundaria);
+    font-size: 1.4rem; font-weight: 600;
+    padding: 20px 45px;
+}
+
+form { 
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 1fr;
+    padding: 30px 45px;
+    gap: 20px 30px;
+}
+form div { display: flex; flex-flow: column nowrap; }
+
+#form-ra { grid-column: 1 / 2; }
+#form-nome { grid-column: 2 / 6; }
+#form-sexo { grid-column: 6 / 8; }
+#form-idade { grid-column: 1 / 2; }
+#form-endereco { grid-column: 2 / 8; }
+#form-telefone { grid-column: 1 / 3; }
+#form-email { grid-column: 3 / 6; }
+
+label {
+    color: var(--cor-primaria);
+    font-size: 1rem; font-weight: 600;
+}
+
+input, select { 
+    width: 100%; 
+    border: solid 2px var(--cor-cinza); border-radius: 10px;
+    padding: 10px 5px 10px 15px; margin-top: 5px;
+
+    color: var(--cor-primaria);
+    font-size: 0.9rem; font-weight: 400;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+}
+
+select {
+    appearance: none;
+    background-image: url("../images/icone_seta_baixo.png");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 30px;
+}
+
+select, ::picker(select) { appearance: base-select; }
+select::picker-icon { display: none; }
+
+::picker(select) {
+    padding: 5px; margin-top: 5px;
+    border: 2px solid var(--cor-cinza); border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+}
+
+option { padding: 8px 12px; border-radius: 10px; }
+option:first-child { margin-bottom: 3px; }
+option:hover, option:focus-visible { background: var(--cor-secundaria); }
+option:checked { background: var(--cor-primaria); color: var(--cor-secundaria); }
+option::checkmark { display: none; }
+
+button {
+    position: absolute;
+    bottom: 30px; right: 45px;
+    background-color: var(--cor-confirmacao);
+    padding: 20px 50px;
+    border: none; border-radius: 15px;
+    color: var(--cor-branca);
+    font-size: 1rem; font-weight: 600;
+    cursor: pointer;
+}
