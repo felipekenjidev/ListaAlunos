@@ -14,7 +14,7 @@
     <nav>
         <img src="images/icone_principal.png" alt="Ícone do Sistema">
         <div id="caixa-navegacao">
-            <a class="ancora-navegacao" href="index.html">
+            <a class="ancora-navegacao" href="index.php">
                 <div class="botao-navegacao navegacao-selecionada">
                     <img src="images/icone_dashboard.png" alt="Ícone de Dashboard">
                     <p>Lista de Alunos</p>
@@ -46,33 +46,7 @@
                     </tr>
                 </thead>
                 <tbody>                
-                    <tr>
-                        <td>129389</td>
-                        <td>Luis Paulo Carlos Augusto</td>
-                        <td>Masculino</td>
-                        <td>21 anos</td>
-                        <td>Avenida Figaldo José, 55</td>
-                        <td>(15) 99728-9298</td>
-                        <td>luis.paulo@ft.unicamp.br</td>
-                    </tr>
-                    <tr>
-                        <td>129389</td>
-                        <td>Luis Paulo Carlos Augusto</td>
-                        <td>Masculino</td>
-                        <td>21 anos</td>
-                        <td>Avenida Figaldo José, 55</td>
-                        <td>(15) 99728-9298</td>
-                        <td>luis.paulo@ft.unicamp.br</td>
-                    </tr>
-                    <tr>
-                        <td>129389</td>
-                        <td>Luis Paulo Carlos Augusto</td>
-                        <td>Masculino</td>
-                        <td>21 anos</td>
-                        <td>Avenida Figaldo José, 55</td>
-                        <td>(15) 99728-9298</td>
-                        <td>luis.paulo@ft.unicamp.br</td>
-                    </tr>
+                    <?php require "consulta.php";?>
                 </tbody>
             </table>
         </div>

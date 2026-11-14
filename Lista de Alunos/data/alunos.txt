@@ -1,0 +1,5 @@
+192832;"André Soares";masculino;23;"Rua Pedro Salvador, 29";"(19) 33029-2093";andreempresa@hotmail.com
+230499;"Viniccius Moraes dos Santos";masculino;19;"Praça dos Pedreiros, 1"; "(13) 12902-3898";vini266@gmail.com
+230001;"Isabella Maria";feminino;18;"Avenida Oswald Manoel, 44";"(22) 99982-2983";isamaismaria@cosmeticos.com
+100981;"Jurandir da Rocha";masculino;29;"Rua Pedro de Toledo, 1299";"(15) 99102-2983";jurandir_rocha@etec.sp.gov.br
+377821;"Diana Silva Filho";feminino;17;"Rua Silva, 99";"(18) 99209-3289";dianoite@gmail.com

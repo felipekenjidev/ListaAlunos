@@ -1,5 +1,5 @@
 <?php
-// Aceitar a Chamada somente se for Método GET
+// Aceitar a Chamada somente se for Método POST
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     header("Location: novo.html");
     exit;
@@ -15,7 +15,7 @@ $info["telefone"] = trim($_POST["txtTelefone"]);
 $info["email"] = trim($_POST["txtEmail"]);
 
 // Registrar o Aluno no Arquivo
-$arquivo = fopen("alunos.txt", "a");
+$arquivo = fopen("data/alunos.txt", "a");
 fputcsv($arquivo, $info, ";");
 fclose($arquivo);
 
