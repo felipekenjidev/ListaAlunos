@@ -6,7 +6,18 @@ if ($arquivo == false) {
 }
 
 // Ler os Alunos Cadastrados
+$alunos = [];
 while (($info = fgetcsv($arquivo, null, ";")) !== false) {
+    $alunos[] = $info;
+}
+fclose($arquivo);
+
+// Exibir os Alunos Ordenados por RA
+usort($alunos, function($info_1, $info_2) {
+    return $info_1[0] <=> $info_2[0];
+});
+
+foreach ($alunos as $info) {
     $info[1] = ucwords($info[1]);
     $info[2] = ucfirst($info[2]);
     $info[4] = ucfirst($info[4]);
@@ -21,5 +32,4 @@ while (($info = fgetcsv($arquivo, null, ";")) !== false) {
             <td>{$info[6]}</td>
         </tr>";
 }
-fclose($arquivo);
 ?>
